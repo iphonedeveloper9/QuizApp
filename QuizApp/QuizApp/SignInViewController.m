@@ -114,37 +114,37 @@
 -(BOOL)validateFields
 {
     if (self.txtUserName.text.length == 0) {
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your Username!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your Username!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         
         return NO;
     }
     else if (self.txtPassword.text.length == 0){
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         return NO;
     }
     else if (self.txtEmail.text.length == 0) {
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         return NO;
     }
     
     else if(![self validateEmail:self.txtEmail.text]){
         
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your valid E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your valid E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         return NO;
     }
     else if (self.txtParentEmail.text.length == 0) {
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your parent E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your parent E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         return NO;
     }
     
     else if(![self validateEmail:self.txtParentEmail.text]){
         
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your valid parent E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your valid parent E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         return NO;
     }
@@ -174,7 +174,7 @@
     if(connection == signinCon)
     {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -192,7 +192,7 @@
         
         int errorcode = [[dictReceivedData objectForKey:@"errorcode"]integerValue];
         if (errorcode == 0) {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Registered Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Registered Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
         

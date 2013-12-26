@@ -37,23 +37,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		70E59FBC186AD3490069D522 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E59FBC186AD3490069D522 /* CollegePrepExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegePrepExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E59FBF186AD3490069D522 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70E59FC1186AD34A0069D522 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		70E59FC3186AD34A0069D522 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		70E59FC7186AD34A0069D522 /* QuizApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizApp-Info.plist"; sourceTree = "<group>"; };
+		70E59FC7186AD34A0069D522 /* CollegePrepExpress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollegePrepExpress-Info.plist"; sourceTree = "<group>"; };
 		70E59FC9186AD34A0069D522 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70E59FCB186AD34A0069D522 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70E59FCD186AD34A0069D522 /* QuizApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuizApp-Prefix.pch"; sourceTree = "<group>"; };
+		70E59FCD186AD34A0069D522 /* CollegePrepExpress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollegePrepExpress-Prefix.pch"; sourceTree = "<group>"; };
 		70E59FCE186AD34A0069D522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70E59FCF186AD34A0069D522 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		70E59FD2186AD34A0069D522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70E59FD4186AD34A0069D522 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		70E59FD5186AD34A0069D522 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		70E59FD7186AD34A0069D522 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		70E59FDD186AD34A0069D522 /* QuizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E59FDD186AD34A0069D522 /* CollegePrepExpressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegePrepExpressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E59FDE186AD34A0069D522 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		70E59FE6186AD34A0069D522 /* QuizAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizAppTests-Info.plist"; sourceTree = "<group>"; };
+		70E59FE6186AD34A0069D522 /* CollegePrepExpressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollegePrepExpressTests-Info.plist"; sourceTree = "<group>"; };
 		70E59FE8186AD34A0069D522 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70E59FEA186AD34A0069D522 /* QuizAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppTests.m; sourceTree = "<group>"; };
 		70E59FF4186AD5210069D522 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		70E59FBD186AD3490069D522 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70E59FBC186AD3490069D522 /* QuizApp.app */,
-				70E59FDD186AD34A0069D522 /* QuizAppTests.xctest */,
+				70E59FBC186AD3490069D522 /* CollegePrepExpress.app */,
+				70E59FDD186AD34A0069D522 /* CollegePrepExpressTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		70E59FC6186AD34A0069D522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				70E59FC7186AD34A0069D522 /* QuizApp-Info.plist */,
+				70E59FC7186AD34A0069D522 /* CollegePrepExpress-Info.plist */,
 				70E59FC8186AD34A0069D522 /* InfoPlist.strings */,
 				70E59FCB186AD34A0069D522 /* main.m */,
-				70E59FCD186AD34A0069D522 /* QuizApp-Prefix.pch */,
+				70E59FCD186AD34A0069D522 /* CollegePrepExpress-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 		70E59FE5186AD34A0069D522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				70E59FE6186AD34A0069D522 /* QuizAppTests-Info.plist */,
+				70E59FE6186AD34A0069D522 /* CollegePrepExpressTests-Info.plist */,
 				70E59FE7186AD34A0069D522 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -178,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70E59FBB186AD3490069D522 /* QuizApp */ = {
+		70E59FBB186AD3490069D522 /* CollegePrepExpress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70E59FEE186AD34A0069D522 /* Build configuration list for PBXNativeTarget "QuizApp" */;
+			buildConfigurationList = 70E59FEE186AD34A0069D522 /* Build configuration list for PBXNativeTarget "CollegePrepExpress" */;
 			buildPhases = (
 				70E59FB8186AD3490069D522 /* Sources */,
 				70E59FB9186AD3490069D522 /* Frameworks */,
@@ -190,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = QuizApp;
+			name = CollegePrepExpress;
 			productName = QuizApp;
-			productReference = 70E59FBC186AD3490069D522 /* QuizApp.app */;
+			productReference = 70E59FBC186AD3490069D522 /* CollegePrepExpress.app */;
 			productType = "com.apple.product-type.application";
 		};
-		70E59FDC186AD34A0069D522 /* QuizAppTests */ = {
+		70E59FDC186AD34A0069D522 /* CollegePrepExpressTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70E59FF1186AD34A0069D522 /* Build configuration list for PBXNativeTarget "QuizAppTests" */;
+			buildConfigurationList = 70E59FF1186AD34A0069D522 /* Build configuration list for PBXNativeTarget "CollegePrepExpressTests" */;
 			buildPhases = (
 				70E59FD9186AD34A0069D522 /* Sources */,
 				70E59FDA186AD34A0069D522 /* Frameworks */,
@@ -208,9 +208,9 @@
 			dependencies = (
 				70E59FE3186AD34A0069D522 /* PBXTargetDependency */,
 			);
-			name = QuizAppTests;
+			name = CollegePrepExpressTests;
 			productName = QuizAppTests;
-			productReference = 70E59FDD186AD34A0069D522 /* QuizAppTests.xctest */;
+			productReference = 70E59FDD186AD34A0069D522 /* CollegePrepExpressTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 70E59FB7186AD3490069D522 /* Build configuration list for PBXProject "QuizApp" */;
+			buildConfigurationList = 70E59FB7186AD3490069D522 /* Build configuration list for PBXProject "CollegePrepExpress" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -240,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70E59FBB186AD3490069D522 /* QuizApp */,
-				70E59FDC186AD34A0069D522 /* QuizAppTests */,
+				70E59FBB186AD3490069D522 /* CollegePrepExpress */,
+				70E59FDC186AD34A0069D522 /* CollegePrepExpressTests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		70E59FE3186AD34A0069D522 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 70E59FBB186AD3490069D522 /* QuizApp */;
+			target = 70E59FBB186AD3490069D522 /* CollegePrepExpress */;
 			targetProxy = 70E59FE2186AD34A0069D522 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,9 +405,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuizApp/QuizApp-Prefix.pch";
-				INFOPLIST_FILE = "QuizApp/QuizApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "QuizApp/CollegePrepExpress-Prefix.pch";
+				INFOPLIST_FILE = "QuizApp/CollegePrepExpress-Info.plist";
+				PRODUCT_NAME = CollegePrepExpress;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,9 +418,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuizApp/QuizApp-Prefix.pch";
-				INFOPLIST_FILE = "QuizApp/QuizApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "QuizApp/CollegePrepExpress-Prefix.pch";
+				INFOPLIST_FILE = "QuizApp/CollegePrepExpress-Info.plist";
+				PRODUCT_NAME = CollegePrepExpress;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,8 +441,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "QuizAppTests/QuizAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "QuizAppTests/CollegePrepExpressTests-Info.plist";
+				PRODUCT_NAME = CollegePrepExpressTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -460,8 +460,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuizApp/QuizApp-Prefix.pch";
-				INFOPLIST_FILE = "QuizAppTests/QuizAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "QuizAppTests/CollegePrepExpressTests-Info.plist";
+				PRODUCT_NAME = CollegePrepExpressTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -470,7 +470,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70E59FB7186AD3490069D522 /* Build configuration list for PBXProject "QuizApp" */ = {
+		70E59FB7186AD3490069D522 /* Build configuration list for PBXProject "CollegePrepExpress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E59FEC186AD34A0069D522 /* Debug */,
@@ -479,21 +479,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70E59FEE186AD34A0069D522 /* Build configuration list for PBXNativeTarget "QuizApp" */ = {
+		70E59FEE186AD34A0069D522 /* Build configuration list for PBXNativeTarget "CollegePrepExpress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E59FEF186AD34A0069D522 /* Debug */,
 				70E59FF0186AD34A0069D522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		70E59FF1186AD34A0069D522 /* Build configuration list for PBXNativeTarget "QuizAppTests" */ = {
+		70E59FF1186AD34A0069D522 /* Build configuration list for PBXNativeTarget "CollegePrepExpressTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70E59FF2186AD34A0069D522 /* Debug */,
 				70E59FF3186AD34A0069D522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

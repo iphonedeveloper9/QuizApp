@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E59FBB186AD3490069D522"
                BuildableName = "QuizApp.app"
-               BlueprintName = "QuizApp"
-               ReferencedContainer = "container:QuizApp.xcodeproj">
+               BlueprintName = "CollegePrepExpress"
+               ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E59FDC186AD34A0069D522"
                BuildableName = "QuizAppTests.xctest"
-               BlueprintName = "QuizAppTests"
-               ReferencedContainer = "container:QuizApp.xcodeproj">
+               BlueprintName = "CollegePrepExpressTests"
+               ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E59FBB186AD3490069D522"
             BuildableName = "QuizApp.app"
-            BlueprintName = "QuizApp"
-            ReferencedContainer = "container:QuizApp.xcodeproj">
+            BlueprintName = "CollegePrepExpress"
+            ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E59FBB186AD3490069D522"
             BuildableName = "QuizApp.app"
-            BlueprintName = "QuizApp"
-            ReferencedContainer = "container:QuizApp.xcodeproj">
+            BlueprintName = "CollegePrepExpress"
+            ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E59FBB186AD3490069D522"
             BuildableName = "QuizApp.app"
-            BlueprintName = "QuizApp"
-            ReferencedContainer = "container:QuizApp.xcodeproj">
+            BlueprintName = "CollegePrepExpress"
+            ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

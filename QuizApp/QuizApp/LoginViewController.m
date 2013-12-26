@@ -61,16 +61,16 @@
 - (IBAction)btnLogin_Click:(id)sender {
     
     if (self.txtEmail.text.length == 0) {
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     else if(![self validateEmail:self.txtEmail.text]){
         
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your valid E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your valid E-mail address!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     else if (self.txtPassword.text.length == 0){
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Please enter your password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please enter your password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     
@@ -150,7 +150,7 @@
     if(connection == loginCon)
     {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -181,22 +181,22 @@
         
         
         if (errorcode == 0 && loginSuccess == 0) {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Incorrect Password!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Incorrect Password!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
         
         if (errorcode == 2 && loginSuccess == 0) {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"You haven,t verified you E-mail address yet. Please check your E-mail and verify it!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"You haven,t verified you E-mail address yet. Please check your E-mail and verify it!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
         
         if (errorcode == 0 && loginSuccess == 1) {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Logged in Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Logged in Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
         
         if (errorcode == 1) {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"No such user!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"No such user!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
                     }
         NSLog(@"%@", dictReceivedData);
