@@ -125,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="285" y="-221"/>
         </scene>
-        <!--Sign In View Controller - Sign In-->
+        <!--Sign In View Controller - Sign Up-->
         <scene sceneID="ZEe-1T-TnX">
             <objects>
                 <viewController id="FnI-wT-i8p" customClass="SignInViewController" sceneMemberID="viewController">
@@ -178,7 +178,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sign In">
+                                <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -188,7 +188,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign In" id="ZAM-sM-XQT"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="ZAM-sM-XQT"/>
                     <connections>
                         <outlet property="txtEmail" destination="anY-4D-Tx3" id="ZIh-SH-8DC"/>
                         <outlet property="txtParentEmail" destination="z8q-7a-jze" id="Cez-Ko-adB"/>

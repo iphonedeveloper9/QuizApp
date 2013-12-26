@@ -74,21 +74,42 @@
         [alert show];
     }
     
-
+    
     else{
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         [self.txtEmail resignFirstResponder];
         [self.txtPassword resignFirstResponder];
-        //http://boilingstocks.com/dubzinc/public_html/signup.php?username=testuser&password=123&email='test@test.com'&parentemail='test@parent.com'
         
         NSString *postStr = [NSString stringWithFormat:@"email=%@&password=%@", self.txtEmail.text, self.txtPassword.text];
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://boilingstocks.com/dubzinc/public_html/login.php?%@", postStr]];
         
-        
-        NSMutableURLRequest *categoryRequest = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120];
-        
-        loginCon = [NSURLConnection connectionWithRequest:categoryRequest delegate:self];
         LoginData = [[NSMutableData alloc]init];
+        
+        //if there is a connection going on just cancel it.
+        [loginCon cancel];
+        
+        //initialize new mutable data
+        
+        //initialize url that is going to be fetched.
+        NSURL *url = [NSURL URLWithString:@"http://boilingstocks.com/dubzinc/public_html/login.php"];
+        
+        //initialize a request from url
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[url standardizedURL]];
+        
+        //set http method
+        [request setHTTPMethod:@"POST"];
+        
+        [request setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+        
+        //set post data of request
+        [request setHTTPBody:[postStr dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        //initialize a connection from request
+        NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        loginCon = connection;
+        
+        //start the connection
+        [connection start];
+        
     }
 }
 
@@ -144,13 +165,40 @@
         NSDictionary *dictReceivedData = [[NSDictionary alloc]init];
         dictReceivedData = [NSJSONSerialization JSONObjectWithData:LoginData options:NSJSONReadingMutableLeaves error:&myError];
         
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:[NSString stringWithFormat:@"%@", dictReceivedData] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+        int errorcode = [[dictReceivedData objectForKey:@"errorcode"]integerValue];
         
-        if ([[dictReceivedData objectForKey:@"errorcode"]integerValue] == 0) {
+        //NSDictionary *data = [dictReceivedData objectForKey:@"data"];
+        
+        int loginSuccess;
+        if ([dictReceivedData objectForKey:@"data"] != [NSNull null]) {
+            loginSuccess = [[[dictReceivedData objectForKey:@"data"] objectForKey:@"loginSuccess"]integerValue];
+            
+        }
+        else
+        {
+            errorcode = 1;
+        }
+        
+        
+        if (errorcode == 0 && loginSuccess == 0) {
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Incorrect Password!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        
+        if (errorcode == 2 && loginSuccess == 0) {
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"You haven,t verified you E-mail address yet. Please check your E-mail and verify it!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        
+        if (errorcode == 0 && loginSuccess == 1) {
             UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Logged in Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
+        
+        if (errorcode == 1) {
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"No such user!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+                    }
         NSLog(@"%@", dictReceivedData);
     }
 }

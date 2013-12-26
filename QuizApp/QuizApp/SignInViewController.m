@@ -64,14 +64,35 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     NSString *postStr = [NSString stringWithFormat:@"username=%@&password=%@&email=%@&parentemail=%@", self.txtUserName.text, self.txtPassword.text, self.txtEmail.text, self.txtParentEmail.text];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://boilingstocks.com/dubzinc/public_html/signup.php?%@", postStr]];
     
-    NSLog(@"%@", url);
-    
-    NSMutableURLRequest *categoryRequest = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120];
-    
-    signinCon = [NSURLConnection connectionWithRequest:categoryRequest delegate:self];
     signinData = [[NSMutableData alloc]init];
+    
+    //if there is a connection going on just cancel it.
+    [signinCon cancel];
+    
+    //initialize new mutable data
+    
+    //initialize url that is going to be fetched.
+    NSURL *url = [NSURL URLWithString:@"http://boilingstocks.com/dubzinc/public_html/signup.php"];
+    
+    //initialize a request from url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[url standardizedURL]];
+    
+    //set http method
+    [request setHTTPMethod:@"POST"];
+    
+    [request setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    
+    //set post data of request
+    [request setHTTPBody:[postStr dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    //initialize a connection from request
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    signinCon = connection;
+    
+    //start the connection
+    [connection start];
+    
 }
 
 -(void)dismissKeyboard
@@ -168,10 +189,9 @@
         NSDictionary *dictReceivedData = [[NSDictionary alloc]init];
         dictReceivedData = [NSJSONSerialization JSONObjectWithData:signinData options:NSJSONReadingMutableLeaves error:&myError];
         
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:[NSString stringWithFormat:@"%@", dictReceivedData] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
         
-        if ([[dictReceivedData objectForKey:@"errorcode"]integerValue] == 0) {
+        int errorcode = [[dictReceivedData objectForKey:@"errorcode"]integerValue];
+        if (errorcode == 0) {
             UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Quiz App" message:@"Registered Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
