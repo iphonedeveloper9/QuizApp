@@ -24,6 +24,11 @@
 		70E59FF7186AD5210069D522 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E59FF5186AD5210069D522 /* LoginViewController.m */; };
 		70E59FFC186AD76C0069D522 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E59FFA186AD76C0069D522 /* SignInViewController.m */; };
 		70E5A002186ADA280069D522 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E5A000186ADA280069D522 /* MBProgressHUD.m */; };
+		70E6815118F47CBF00D3B8AB /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E6815018F47CBF00D3B8AB /* background.png */; };
+		70E6815318F47E6800D3B8AB /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70E6815218F47E6800D3B8AB /* logo.jpg */; };
+		70E6815F18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E6815C18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.m */; };
+		70E6816018F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E6815E18F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		70E6816318F484C100D3B8AB /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E6816218F484C100D3B8AB /* LevelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,14 @@
 		70E59FFA186AD76C0069D522 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		70E59FFF186ADA280069D522 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		70E5A000186ADA280069D522 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		70E6815018F47CBF00D3B8AB /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		70E6815218F47E6800D3B8AB /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		70E6815B18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		70E6815C18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		70E6815D18F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		70E6815E18F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		70E6816118F484C100D3B8AB /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		70E6816218F484C100D3B8AB /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +144,9 @@
 				70E59FF5186AD5210069D522 /* LoginViewController.m */,
 				70E59FF9186AD76C0069D522 /* SignInViewController.h */,
 				70E59FFA186AD76C0069D522 /* SignInViewController.m */,
+				70E6816118F484C100D3B8AB /* LevelViewController.h */,
+				70E6816218F484C100D3B8AB /* LevelViewController.m */,
+				70E6815A18F47F2100D3B8AB /* keyboard */,
 				70E59FD7186AD34A0069D522 /* Images.xcassets */,
 				70E59FC6186AD34A0069D522 /* Supporting Files */,
 			);
@@ -140,6 +156,8 @@
 		70E59FC6186AD34A0069D522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70E6815018F47CBF00D3B8AB /* background.png */,
+				70E6815218F47E6800D3B8AB /* logo.jpg */,
 				70E59FC7186AD34A0069D522 /* CollegePrepExpress-Info.plist */,
 				70E59FC8186AD34A0069D522 /* InfoPlist.strings */,
 				70E59FCB186AD34A0069D522 /* main.m */,
@@ -173,6 +191,17 @@
 				70E5A000186ADA280069D522 /* MBProgressHUD.m */,
 			);
 			name = MBProgressHud;
+			sourceTree = "<group>";
+		};
+		70E6815A18F47F2100D3B8AB /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				70E6815B18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.h */,
+				70E6815C18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.m */,
+				70E6815D18F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				70E6815E18F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E59FD8186AD34A0069D522 /* Images.xcassets in Resources */,
+				70E6815318F47E6800D3B8AB /* logo.jpg in Resources */,
+				70E6815118F47CBF00D3B8AB /* background.png in Resources */,
 				70E59FCA186AD34A0069D522 /* InfoPlist.strings in Resources */,
 				70E59FD3186AD34A0069D522 /* Main.storyboard in Resources */,
 			);
@@ -272,10 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E6815F18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.m in Sources */,
 				70E59FFC186AD76C0069D522 /* SignInViewController.m in Sources */,
+				70E6816318F484C100D3B8AB /* LevelViewController.m in Sources */,
 				70E5A002186ADA280069D522 /* MBProgressHUD.m in Sources */,
 				70E59FF7186AD5210069D522 /* LoginViewController.m in Sources */,
 				70E59FD6186AD34A0069D522 /* ViewController.m in Sources */,
+				70E6816018F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				70E59FD0186AD34A0069D522 /* AppDelegate.m in Sources */,
 				70E59FCC186AD34A0069D522 /* main.m in Sources */,
 			);

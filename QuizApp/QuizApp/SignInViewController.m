@@ -210,4 +210,8 @@
     }
     
 }
+- (IBAction)btnLogin_Click:(id)sender {
+    
+    [self performSegueWithIdentifier:@"loginSegue" sender:nil];
+}
 @end

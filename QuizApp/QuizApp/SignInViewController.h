@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 @property (strong, nonatomic) IBOutlet UITextField *txtEmail;
 
+- (IBAction)btnLogin_Click:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *txtParentEmail;
 - (IBAction)btnSign_Click:(id)sender;
 @end

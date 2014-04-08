@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E59FBB186AD3490069D522"
-               BuildableName = "QuizApp.app"
+               BuildableName = "CollegePrepExpress.app"
                BlueprintName = "CollegePrepExpress"
                ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70E59FDC186AD34A0069D522"
-               BuildableName = "QuizAppTests.xctest"
+               BuildableName = "CollegePrepExpressTests.xctest"
                BlueprintName = "CollegePrepExpressTests"
                ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E59FBB186AD3490069D522"
-            BuildableName = "QuizApp.app"
+            BuildableName = "CollegePrepExpress.app"
             BlueprintName = "CollegePrepExpress"
             ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E59FBB186AD3490069D522"
-            BuildableName = "QuizApp.app"
+            BuildableName = "CollegePrepExpress.app"
             BlueprintName = "CollegePrepExpress"
             ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70E59FBB186AD3490069D522"
-            BuildableName = "QuizApp.app"
+            BuildableName = "CollegePrepExpress.app"
             BlueprintName = "CollegePrepExpress"
             ReferencedContainer = "container:CollegePrepExpress.xcodeproj">
          </BuildableReference>

@@ -27,12 +27,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //self.automaticallyAdjustsScrollViewInsets = NO;
+
     // Do any additional setup after loading the view from its nib.
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self clearFields];
+   // [self clearFields];
 }
 
 - (void)didReceiveMemoryWarning
@@ -191,8 +193,10 @@
         }
         
         if (errorcode == 0 && loginSuccess == 1) {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Logged in Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-            [alert show];
+            //UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Logged in Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            //[alert show];
+            
+            [self performSegueWithIdentifier:@"levelSegue" sender:nil];
         }
         
         if (errorcode == 1) {
