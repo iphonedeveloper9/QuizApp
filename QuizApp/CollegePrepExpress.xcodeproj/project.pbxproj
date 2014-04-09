@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		707CCF8B18F5B85500DCD804 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707CCF8A18F5B85500DCD804 /* QuizViewController.m */; };
+		707CCF8E18F5CD6400DCD804 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707CCF8D18F5CD6400DCD804 /* ResultsViewController.m */; };
 		70E59FC0186AD34A0069D522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59FBF186AD3490069D522 /* Foundation.framework */; };
 		70E59FC2186AD34A0069D522 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59FC1186AD34A0069D522 /* CoreGraphics.framework */; };
 		70E59FC4186AD34A0069D522 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59FC3186AD34A0069D522 /* UIKit.framework */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		707CCF8918F5B85500DCD804 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		707CCF8A18F5B85500DCD804 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		707CCF8C18F5CD6400DCD804 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		707CCF8D18F5CD6400DCD804 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		70E59FBC186AD3490069D522 /* CollegePrepExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegePrepExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E59FBF186AD3490069D522 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70E59FC1186AD34A0069D522 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +152,10 @@
 				70E59FFA186AD76C0069D522 /* SignInViewController.m */,
 				70E6816118F484C100D3B8AB /* LevelViewController.h */,
 				70E6816218F484C100D3B8AB /* LevelViewController.m */,
+				707CCF8918F5B85500DCD804 /* QuizViewController.h */,
+				707CCF8A18F5B85500DCD804 /* QuizViewController.m */,
+				707CCF8C18F5CD6400DCD804 /* ResultsViewController.h */,
+				707CCF8D18F5CD6400DCD804 /* ResultsViewController.m */,
 				70E6815A18F47F2100D3B8AB /* keyboard */,
 				70E59FD7186AD34A0069D522 /* Images.xcassets */,
 				70E59FC6186AD34A0069D522 /* Supporting Files */,
@@ -304,9 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E6815F18F4801700D3B8AB /* TPKeyboardAvoidingScrollView.m in Sources */,
+				707CCF8B18F5B85500DCD804 /* QuizViewController.m in Sources */,
 				70E59FFC186AD76C0069D522 /* SignInViewController.m in Sources */,
 				70E6816318F484C100D3B8AB /* LevelViewController.m in Sources */,
 				70E5A002186ADA280069D522 /* MBProgressHUD.m in Sources */,
+				707CCF8E18F5CD6400DCD804 /* ResultsViewController.m in Sources */,
 				70E59FF7186AD5210069D522 /* LoginViewController.m in Sources */,
 				70E59FD6186AD34A0069D522 /* ViewController.m in Sources */,
 				70E6816018F4801700D3B8AB /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,

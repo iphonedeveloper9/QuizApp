@@ -34,6 +34,8 @@
     [self customButton:btnMedium];
     [self customButton:btnHard];
     
+    difficulty = @"";
+    
     contentScroll.contentSize = CGSizeMake(320, btnStart.frame.origin.y + btnStart.frame.size.height + 10);
 	// Do any additional setup after loading the view.
 }
@@ -71,7 +73,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark segue method
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"quizSegue"])
+    {
+        QuizViewController *vc = [segue destinationViewController];
+        
+        vc.diff = difficulty;
+    }
+}
+
 - (IBAction)btnStart_Click:(id)sender {
+    
+    if (difficulty.length == 0) {
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Please choose difficulty level" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
+    [self performSegueWithIdentifier:@"quizSegue" sender:nil];
     
 }
 
@@ -90,14 +111,24 @@
 
 - (IBAction)btnEasy_click:(id)sender {
     
+    difficulty = @"E";
     [self didChangeLevel:sender];
 }
 
 - (IBAction)btnMedium_Click:(id)sender {
+    
+    difficulty = @"M";
     [self didChangeLevel:sender];
 }
 
 - (IBAction)btnHard_Click:(id)sender {
+    
+    difficulty = @"H";
    [self didChangeLevel:sender];
+}
+
+- (IBAction)btnBack_Click:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

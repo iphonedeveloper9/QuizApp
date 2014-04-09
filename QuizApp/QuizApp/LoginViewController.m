@@ -34,7 +34,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-   // [self clearFields];
+    [self clearFields];
 }
 
 - (void)didReceiveMemoryWarning

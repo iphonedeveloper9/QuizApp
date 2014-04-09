@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuizViewController.h"
 
 @interface LevelViewController : UIViewController
 {
@@ -19,6 +20,8 @@
     IBOutlet UIButton *btnMath;
     IBOutlet UIButton *btnVocab;
     IBOutlet UIButton *btnGrammer;
+    
+    NSString *difficulty;
 }
 - (IBAction)btnStart_Click:(id)sender;
 - (IBAction)btnGrammer_Click:(id)sender;
@@ -27,5 +30,6 @@
 - (IBAction)btnEasy_click:(id)sender;
 - (IBAction)btnMedium_Click:(id)sender;
 - (IBAction)btnHard_Click:(id)sender;
+- (IBAction)btnBack_Click:(id)sender;
 
 @end
