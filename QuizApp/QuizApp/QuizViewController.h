@@ -23,6 +23,7 @@
     IBOutlet UIButton *btnOpt3;
     IBOutlet UIButton *btnOpt2;
     IBOutlet UILabel *lblQuest;
+    IBOutlet UIImageView *imgQuePic;
     
     NSArray *arrQuiz;
     NSMutableArray *arrAns;

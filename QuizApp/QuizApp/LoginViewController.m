@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = NO;
     //self.automaticallyAdjustsScrollViewInsets = NO;
 
     // Do any additional setup after loading the view from its nib.
@@ -34,7 +35,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self clearFields];
+    //[self clearFields];
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,6 +121,11 @@
     [self performSegueWithIdentifier:@"signInSegue" sender:nil];
 }
 
+- (IBAction)bulb_Click:(id)sender {
+    
+    [self performSegueWithIdentifier:@"showTips" sender:nil];
+}
+
 #pragma mark - textfield Delegates
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -195,6 +201,11 @@
         if (errorcode == 0 && loginSuccess == 1) {
             //UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"CollegePrepExpress" message:@"Logged in Successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             //[alert show];
+            
+            [[NSUserDefaults standardUserDefaults] setObject:self.txtEmail.text forKey:@"email"];
+            [[NSUserDefaults standardUserDefaults] setObject:[[dictReceivedData objectForKey:@"data"]objectForKey:@"name"] forKey:@"name"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            
             
             [self performSegueWithIdentifier:@"levelSegue" sender:nil];
         }

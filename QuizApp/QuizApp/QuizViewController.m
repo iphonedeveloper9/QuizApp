@@ -7,6 +7,7 @@
 //
 
 #import "QuizViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface QuizViewController ()
 
@@ -108,6 +109,8 @@
             for (int i = 0; i < arrQuiz.count; i++) {
                 [arrAns addObject:@""];
             }
+            
+            NSLog(@"%@", arrQuiz);
             [self setQuestionData];
         }
         else
@@ -128,6 +131,12 @@
 
 -(void)setQuestionData
 {
+    imgQuePic.image = nil;
+    
+    NSString *imgUrl = [NSString stringWithFormat:@"http://boilingstocks.com/dubzinc/public_html/images/%@", [[arrQuiz objectAtIndex:queNo]objectForKey:@"graphic"]];
+    
+    [imgQuePic setImageWithURL:[NSURL URLWithString:imgUrl]];
+                   placeholderImage:[UIImage imageNamed:@"placeholder.png"];
     lblQuest.text = [[arrQuiz objectAtIndex:queNo]objectForKey:@"text"];
     [btnOpt1 setTitle:[[arrQuiz objectAtIndex:queNo]objectForKey:@"option1"] forState:UIControlStateNormal];
      [btnOpt2 setTitle:[[arrQuiz objectAtIndex:queNo]objectForKey:@"option2"] forState:UIControlStateNormal];
@@ -180,16 +189,29 @@
         NSLog(@"%@", arrQuiz);
         int correct = 0;
         
+        NSMutableArray *arrAnskey = [[NSMutableArray alloc]init];
+        
         for (int i = 0; i < arrQuiz.count; i++) {
             int ans = [[[arrQuiz objectAtIndex:i]objectForKey:@"answer"]integerValue];
             if ([[arrAns objectAtIndex:i] isKindOfClass:[NSNumber class]]) {
                 if ([[arrAns objectAtIndex:i]integerValue] == ans) {
                     correct ++;
+                    [arrAnskey addObject:[NSNumber numberWithInt:1]];
                 }
+                else
+                {
+                    [arrAnskey addObject:[NSNumber numberWithInt:0]];
+                }
+            }
+            else
+            {
+                 [arrAnskey addObject:[NSNumber numberWithInt:0]];
             }
             
         }
+        vc.diff = diff;
         vc.correct = correct;
+        vc.arrAns = arrAnskey;
     }
 }
 

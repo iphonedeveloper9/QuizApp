@@ -19,5 +19,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 - (IBAction)btnLogin_Click:(id)sender;
 - (IBAction)btnSignIn_Click:(id)sender;
+- (IBAction)bulb_Click:(id)sender;
 
 @end
